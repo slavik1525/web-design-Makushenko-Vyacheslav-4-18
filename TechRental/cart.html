@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Rental — Кошик</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cart-header">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Логотип Tech Rental">
+      <span>Tech Rental</span>
+    </a>
+  </header>
+
+  <main>
+    <a href="catalog.html" class="back">← Кошик</a>
+
+    <div class="cart-layout">
+
+     
+      <section class="cart-main">
+        <div class="panel"><label><input type="checkbox"> Видалити все</label></div>
+
+        <div class="panel">
+          <div class="cart-item">
+            <img src="images/cart-monitor.png" alt="Монітор Samsung Odyssey G5">
+            <div class="item-info">
+              <p>Монітор ігровий Samsung Odyssey G5</p>
+              <small>Код товару: 142536</small>
+            </div>
+            <label class="qty"><input type="number" value="1" min="1"> діб</label>
+            <b>199 грн</b>
+          </div>
+          <div class="item-actions">
+            <a href="#">♡ В обране</a>
+            <a href="#">🗑 Видалити</a>
+          </div>
+          <div class="item-actions"><a href="catalog.html">+ Оберіть корисні доповнення</a></div>
+        </div>
+      </section>
+
+    
+      <aside class="summary">
+        <a href="#" class="green-btn wide">Перейти до оформлення</a>
+        <div class="panel">
+          <p class="sum-row"><span>1 товар на суму</span><span>199 грн</span></p>
+          <p class="sum-row"><span>Загальна сума</span><span>199 грн</span></p>
+        </div>
+      </aside>
+    </div>
+
+
+    <section class="panel recommend">
+      <h2>Рекомендовано для вас</h2>
+      <div class="rec-grid">
+        <div class="rec-item">
+          <img src="images/cart-station.png" alt="EcoFlow Delta 3">
+          <div>
+            <h3>Зарядна станція EcoFlow Delta 3</h3>
+            <p>Номінальна потужність: 1800 Вт<br>Ємність: 1024 Вт·г<br>Тип акумулятора: LiFePO4</p>
+            <p class="rec-price">449 грн/доба <a href="cart.html">🛒</a></p>
+          </div>
+        </div>
+        <div class="rec-item">
+          <img src="images/cart-ps5.png" alt="PlayStation 5 Slim">
+          <div>
+            <h3>Ігрова приставка PlayStation 5 Slim Digital Edition</h3>
+            <p>Об'єм накопичувача: 825 ГБ<br>Максимальна роздільна здатність: 7680 x 4320</p>
+            <p class="rec-price">349 грн/доба <a href="cart.html">🛒</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

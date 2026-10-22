@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Rental — Каталог</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="header-left">
+      <a href="about.html" class="small-btn">Про нас</a>
+      <a href="catalog.html" class="small-btn current">Каталог</a>
+    </nav>
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Логотип Tech Rental">
+      <span>Tech Rental</span>
+    </a>
+    <div class="header-right">
+      <a href="cart.html" class="cart-btn" title="Кошик">🛒</a>
+      <a href="#" class="user-btn" title="Профіль">👤</a>
+    </div>
+  </header>
+
+  <h1 class="main-title">Оренда сучасної техніки для ваших проєктів</h1>
+
+  <main>
+    <form class="search" onsubmit="return false">
+      <input type="text" placeholder="Пошук">
+      <button type="submit">Знайти 🔍</button>
+    </form>
+
+    <div class="catalog">
+
+     
+      <form class="filters-box">
+        <h3>Фільтри</h3>
+        <h4>Категорії:</h4>
+        <label><input type="radio" name="cat"> Ноутбуки та ПК</label>
+        <label><input type="radio" name="cat"> Фото та відео</label>
+        <label><input type="radio" name="cat"> Аудіо та світло</label>
+        <label><input type="radio" name="cat"> Геймінг та VR</label>
+        <label><input type="radio" name="cat"> Живлення</label>
+        <h4>Ціна оренди (грн/день):</h4>
+        <p class="price-text">50грн - 5000грн</p>
+        <input type="range" min="50" max="5000" value="2500">
+        <h4>Бренди:</h4>
+        <div class="brands">
+          <label><input type="checkbox"> Apple</label>
+          <label><input type="checkbox"> Sony</label>
+          <label><input type="checkbox"> ASUS</label>
+          <label><input type="checkbox"> Canon</label>
+          <label><input type="checkbox"> DJI</label>
+          <label><input type="checkbox"> EcoFlow</label>
+        </div>
+        <div class="center"><input type="reset" class="green-btn" value="Скинути фільтри"></div>
+      </form>
+
+     
+      <section class="products">
+        <label class="sort">Сортування:
+          <select>
+            <option>за популярністю</option>
+            <option>від дешевих до дорогих</option>
+            <option>від дорогих до дешевих</option>
+          </select>
+        </label>
+
+        <div class="categories">
+          <a href="cart.html" class="card"><img src="images/it-ultrabook.png" alt="Ультрабуки"><p>Ультрабуки</p></a>
+          <a href="cart.html" class="card"><img src="images/it-monitor.png" alt="Монітори"><p>Монітори</p></a>
+          <a href="cart.html" class="card"><img src="images/it-pc.png" alt="Потужні графічні ПК"><p>Потужні графічні ПК</p></a>
+          <a href="cart.html" class="card"><img src="images/ph-camera.png" alt="Фотоапарати"><p>Фотоапарати</p></a>
+          <a href="cart.html" class="card"><img src="images/ph-lens.png" alt="Об'єктиви"><p>Об'єктиви</p></a>
+          <a href="cart.html" class="card"><img src="images/ph-light.png" alt="Студійне світло"><p>Студійне світло</p></a>
+        </div>
+
+        <p class="pagination">
+          <a href="#">&lt; Назад</a> <a href="#">[1]</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> ... <a href="#">8</a> <a href="#">Вперед &gt;</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <h2 class="title">Контакти</h2>
+    <div class="contacts">
+      <a href="tel:+380636633366">📞 +380-63-663-33-66</a>
+      <a href="tel:+380686688866">+380-68-668-88-66</a>
+    </div>
+  </footer>
+
+</body>
+</html>
